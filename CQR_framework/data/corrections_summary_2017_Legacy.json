@@ -1,0 +1,270 @@
+{
+ "isolations": {
+  "phoIso": {
+   "EE": {
+    "peak2tail": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := userFloat(\"peak2tail_rnd\")"
+     ], 
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalTailRegressor_EE_phoIso.xml"
+    }, 
+    "peak_tail_clfs": {
+     "weights_data": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/data_clf_p2t_EE_phoIso.xml", 
+     "weights_mc": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/mc_clf_p2t_EE_phoIso.xml", 
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho"
+     ]
+    }, 
+    "morphing": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := pfPhoIso03"
+     ], 
+     "scale": 0.03659398460457955, 
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalRegressor_EE_phoIso.xml", 
+     "center": -0.005993524078167001
+    }
+   }, 
+   "EB": {
+    "peak2tail": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := userFloat(\"peak2tail_rnd\")"
+     ], 
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalTailRegressor_EB_phoIso.xml"
+    }, 
+    "peak_tail_clfs": {
+     "weights_data": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/data_clf_p2t_EB_phoIso.xml", 
+     "weights_mc": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/mc_clf_p2t_EB_phoIso.xml", 
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho"
+     ]
+    }, 
+    "morphing": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := pfPhoIso03"
+     ], 
+     "scale": 0.08328429357760053, 
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalRegressor_EB_phoIso.xml", 
+     "center": 0.04449992030025607
+    }
+   }
+  }, 
+  "chIso": {
+   "EE": {
+    "chIso_peak2tail": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := pfChgIsoWrtWorstVtx03", 
+      "f5 := userFloat(\"peak2tail_chIso_rnd\")"
+     ], 
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalTailRegressor_EE_chIso.xml"
+    }, 
+    "peak_tail_clfs": {
+     "weights_data": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/data_clf_3Cat_EE_chIso_chIsoWorst.xml", 
+     "weights_mc": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/mc_clf_3Cat_EE_chIso_chIsoWorst.xml", 
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho"
+     ]
+    }, 
+    "chIsoWorst_peak2tail": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := pfChgIsoWrtChosenVtx03", 
+      "f5 := userFloat(\"peak2tail_chIsoWorst_rnd\")"
+     ], 
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalTailRegressor_EE_chIsoWorst.xml"
+    }, 
+    "chIsoWorst_morphing": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := pfChgIsoWrtChosenVtx03", 
+      "f5 := pfChgIsoWrtWorstVtx03"
+     ], 
+     "scale": 0.06937509297950828, 
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalRegressor_EE_chIsoWorst.xml", 
+     "center": -0.012102991445168576
+    }, 
+    "chIso_morphing": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := pfChgIsoWrtChosenVtx03", 
+      "f5 := pfChgIsoWrtWorstVtx03"
+     ], 
+     "scale": 0.053902877744458275, 
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalRegressor_EE_chIso.xml", 
+     "center": 0.005629398768536298
+    }
+   }, 
+   "EB": {
+    "chIso_peak2tail": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := pfChgIsoWrtWorstVtx03", 
+      "f5 := userFloat(\"peak2tail_chIso_rnd\")"
+     ], 
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalTailRegressor_EB_chIso.xml"
+    }, 
+    "peak_tail_clfs": {
+     "weights_data": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/data_clf_3Cat_EB_chIso_chIsoWorst.xml", 
+     "weights_mc": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/mc_clf_3Cat_EB_chIso_chIsoWorst.xml", 
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho"
+     ]
+    }, 
+    "chIsoWorst_peak2tail": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := pfChgIsoWrtChosenVtx03", 
+      "f5 := userFloat(\"peak2tail_chIsoWorst_rnd\")"
+     ], 
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalTailRegressor_EB_chIsoWorst.xml"
+    }, 
+    "chIsoWorst_morphing": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := pfChgIsoWrtChosenVtx03", 
+      "f5 := pfChgIsoWrtWorstVtx03"
+     ], 
+     "scale": 0.07698244070093274, 
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalRegressor_EB_chIsoWorst.xml", 
+     "center": 0.08875002442737878
+    }, 
+    "chIso_morphing": {
+     "variables": [
+      "f0 := pt", 
+      "f1 := superCluster.eta", 
+      "f2 := phi", 
+      "f3 := global.rho", 
+      "f4 := pfChgIsoWrtChosenVtx03", 
+      "f5 := pfChgIsoWrtWorstVtx03"
+     ], 
+     "scale": 0.07033647601213677, 
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalRegressor_EB_chIso.xml", 
+     "center": 0.03309216961513517
+    }
+   }
+  }
+ }, 
+ "shower_shapes": {
+  "sieie": {
+   "EE": {
+    "scale": 0.0004274773880549934, 
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalRegressor_EE_sieie.xml", 
+    "center": 0.00022834476687329242
+   }, 
+   "EB": {
+    "scale": 9.16444903149064e-05, 
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalRegressor_EB_sieie.xml", 
+    "center": -1.7937031871344093e-05
+   }
+  }, 
+  "etaWidth": {
+   "EE": {
+    "scale": 0.0004501920716418325, 
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalRegressor_EE_etaWidth.xml", 
+    "center": 0.00026279990833288913
+   }, 
+   "EB": {
+    "scale": 0.0002980484981690405, 
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalRegressor_EB_etaWidth.xml", 
+    "center": -6.979588719400326e-06
+   }
+  }, 
+  "r9": {
+   "EE": {
+    "scale": 0.01370282259444966, 
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalRegressor_EE_r9.xml", 
+    "center": -0.007243889920611868
+   }, 
+   "EB": {
+    "scale": 0.008903793308924074, 
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalRegressor_EB_r9.xml", 
+    "center": -0.0031396514172706835
+   }
+  }, 
+  "phiWidth": {
+   "EE": {
+    "scale": 0.0020769732429961885, 
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalRegressor_EE_phiWidth.xml", 
+    "center": 0.0012185156608152982
+   }, 
+   "EB": {
+    "scale": 0.0015185118270562956, 
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalRegressor_EB_phiWidth.xml", 
+    "center": 0.0004858939940410737
+   }
+  }, 
+  "sieip": {
+   "EE": {
+    "scale": 1.8787174515417313e-05, 
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalRegressor_EE_sieip.xml", 
+    "center": -9.748050865400002e-06
+   }, 
+   "EB": {
+    "scale": 1.0568535179511535e-06, 
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalRegressor_EB_sieip.xml", 
+    "center": -2.7280449875290024e-08
+   }
+  }, 
+  "s4": {
+   "EE": {
+    "scale": 0.014026992905521729, 
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalRegressor_EE_s4.xml", 
+    "center": -0.009796456994442537
+   }, 
+   "EB": {
+    "scale": 0.006373763449430178, 
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2017_Legacy/weights_finalRegressor_EB_s4.xml", 
+    "center": -0.002431847699673806
+   }
+  }
+ }
+}

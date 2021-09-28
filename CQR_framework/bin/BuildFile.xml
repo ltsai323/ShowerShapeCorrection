@@ -1,0 +1,4 @@
+<use name="ShowerShapeCorrection/CQR_framework"/>
+
+
+<bin name="example" file="example.cpp"/>

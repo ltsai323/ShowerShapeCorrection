@@ -1,0 +1,8 @@
+<use name="root"/>
+<use name="roottmva"/>
+<use name="boost"/>
+<use name="FWCore/ParameterSet"/>
+<use name="FWCore/PythonParameterSet"/>
+<export>
+      <lib name="1"/>
+</export>

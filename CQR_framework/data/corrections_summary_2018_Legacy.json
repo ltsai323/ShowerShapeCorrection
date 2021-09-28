@@ -1,0 +1,290 @@
+{
+ "shower_shapes": {
+  "r9": {
+   "EB": {
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalRegressor_EB_r9.xml",
+    "scale": 0.00974529926595541,
+    "center": -0.0032455444688871404
+   },
+   "EE": {
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalRegressor_EE_r9.xml",
+    "scale": 0.015158424850746033,
+    "center": -0.008216661026002492
+   }
+  },
+  "s4": {
+   "EB": {
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalRegressor_EB_s4.xml",
+    "scale": 0.006867933306285823,
+    "center": -0.002979937739167826
+   },
+   "EE": {
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalRegressor_EE_s4.xml",
+    "scale": 0.013772174062689158,
+    "center": -0.01275499890321552
+   }
+  },
+  "sieie": {
+   "EB": {
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalRegressor_EB_sieie.xml",
+    "scale": 9.465761735043482e-05,
+    "center": -1.3066554941611706e-05
+   },
+   "EE": {
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalRegressor_EE_sieie.xml",
+    "scale": 0.0004386573859714686,
+    "center": 0.0003422562539907338
+   }
+  },
+  "phiWidth": {
+   "EB": {
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalRegressor_EB_phiWidth.xml",
+    "scale": 0.0015007177877147098,
+    "center": 0.0004572452023500137
+   },
+   "EE": {
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalRegressor_EE_phiWidth.xml",
+    "scale": 0.0020926209970795924,
+    "center": 0.001374730907306377
+   }
+  },
+  "etaWidth": {
+   "EB": {
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalRegressor_EB_etaWidth.xml",
+    "scale": 0.0002984762212580468,
+    "center": -4.131855241154905e-08
+   },
+   "EE": {
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalRegressor_EE_etaWidth.xml",
+    "scale": 0.0004681497572978765,
+    "center": 0.0003491653446676367
+   }
+  },
+  "sieip": {
+   "EB": {
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalRegressor_EB_sieip.xml",
+    "scale": 1.0089217530575483e-06,
+    "center": -9.246455176366988e-09
+   },
+   "EE": {
+    "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalRegressor_EE_sieip.xml",
+    "scale": 1.957110694602359e-05,
+    "center": -1.0515567991278526e-05
+   }
+  }
+ },
+ "isolations": {
+  "phoIso": {
+   "EE": {
+    "peak_tail_clfs": {
+     "weights_data": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/data_clf_p2t_EE_phoIso.xml",
+     "weights_mc": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/mc_clf_p2t_EE_phoIso.xml",
+     "variables": [
+      "f0 := pt",
+      "f1 := superCluster.eta",
+      "f2 := phi",
+      "f3 := global.rho"
+     ]
+    },
+    "peak2tail": {
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalTailRegressor_EE_phoIso.xml",
+     "variables": [
+      "f0 := pt",
+      "f1 := superCluster.eta",
+      "f2 := phi",
+      "f3 := global.rho",
+      "f4 := userFloat(\"peak2tail_rnd\")"
+     ]
+    },
+    "morphing": {
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalRegressor_EE_phoIso.xml",
+     "scale": 0.030610021383632002,
+     "center": -0.0006333479089460636,
+     "variables": [
+      "f0 := pt",
+      "f1 := superCluster.eta",
+      "f2 := phi",
+      "f3 := global.rho",
+      "f4 := pfPhoIso03"
+     ]
+    }
+   },
+   "EB": {
+    "peak_tail_clfs": {
+     "weights_data": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/data_clf_p2t_EB_phoIso.xml",
+     "weights_mc": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/mc_clf_p2t_EB_phoIso.xml",
+     "variables": [
+      "f0 := pt",
+      "f1 := superCluster.eta",
+      "f2 := phi",
+      "f3 := global.rho"
+     ]
+    },
+    "peak2tail": {
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalTailRegressor_EB_phoIso.xml",
+     "variables": [
+      "f0 := pt",
+      "f1 := superCluster.eta",
+      "f2 := phi",
+      "f3 := global.rho",
+      "f4 := userFloat(\"peak2tail_rnd\")"
+     ]
+    },
+    "morphing": {
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalRegressor_EB_phoIso.xml",
+     "scale": 0.09380897123027215,
+     "center": 0.04948712355988649,
+     "variables": [
+      "f0 := pt",
+      "f1 := superCluster.eta",
+      "f2 := phi",
+      "f3 := global.rho",
+      "f4 := pfPhoIso03"
+     ]
+    }
+   }
+  },
+  "chIso": {
+   "EE": {
+    "peak_tail_clfs": {
+     "weights_data": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/data_clf_3Cat_EE_chIso_chIsoWorst.xml",
+     "weights_mc": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/mc_clf_3Cat_EE_chIso_chIsoWorst.xml",
+     "variables": [
+      "f0 := pt",
+      "f1 := superCluster.eta",
+      "f2 := phi",
+      "f3 := global.rho"
+     ]
+    },
+    "chIso_peak2tail": {
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalTailRegressor_EE_chIso.xml",
+     "variables": [
+      "f0 := pt",
+      "f1 := superCluster.eta",
+      "f2 := phi",
+      "f3 := global.rho",
+      "f4 := pfChgIsoWrtWorstVtx03",
+      "f5 := userFloat(\"peak2tail_chIso_rnd\")"
+     ]
+    },
+    "chIsoWorst_peak2tail": {
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalTailRegressor_EE_chIsoWorst.xml",
+     "variables": [
+      "f0 := pt",
+      "f1 := superCluster.eta",
+      "f2 := phi",
+      "f3 := global.rho",
+      "f4 := pfChgIsoWrtChosenVtx03",
+      "f5 := userFloat(\"peak2tail_chIsoWorst_rnd\")"
+     ]
+    },
+    "chIso_morphing": {
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalRegressor_EE_chIso.xml",
+     "scale": 0.0586323115987263,
+     "center": 0.008045338841200733,
+     "variables": [
+      "f0 := pt",
+      "f1 := superCluster.eta",
+      "f2 := phi",
+      "f3 := global.rho",
+      "f4 := pfChgIsoWrtChosenVtx03",
+      "f5 := pfChgIsoWrtWorstVtx03"
+     ]
+    },
+    "chIsoWorst_morphing": {
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalRegressor_EE_chIsoWorst.xml",
+     "scale": 0.06822744806539288,
+     "center": -0.00819331686333108,
+     "variables": [
+      "f0 := pt",
+      "f1 := superCluster.eta",
+      "f2 := phi",
+      "f3 := global.rho",
+      "f4 := pfChgIsoWrtChosenVtx03",
+      "f5 := pfChgIsoWrtWorstVtx03"
+     ]
+    }
+   },
+   "EB": {
+    "peak_tail_clfs": {
+     "weights_data": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/data_clf_3Cat_EB_chIso_chIsoWorst.xml",
+     "weights_mc": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/mc_clf_3Cat_EB_chIso_chIsoWorst.xml",
+     "variables": [
+      "f0 := pt",
+      "f1 := superCluster.eta",
+      "f2 := phi",
+      "f3 := global.rho"
+     ]
+    },
+    "chIso_peak2tail": {
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalTailRegressor_EB_chIso.xml",
+     "variables": [
+      "f0 := pt",
+      "f1 := superCluster.eta",
+      "f2 := phi",
+      "f3 := global.rho",
+      "f4 := pfChgIsoWrtWorstVtx03",
+      "f5 := userFloat(\"peak2tail_chIso_rnd\")"
+     ]
+    },
+    "chIsoWorst_peak2tail": {
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalTailRegressor_EB_chIsoWorst.xml",
+     "variables": [
+      "f0 := pt",
+      "f1 := superCluster.eta",
+      "f2 := phi",
+      "f3 := global.rho",
+      "f4 := pfChgIsoWrtChosenVtx03",
+      "f5 := userFloat(\"peak2tail_chIsoWorst_rnd\")"
+     ]
+    },
+    "chIso_morphing": {
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalRegressor_EB_chIso.xml",
+     "scale": 0.08092765151453417,
+     "center": 0.04253048994282421,
+     "variables": [
+      "f0 := pt",
+      "f1 := superCluster.eta",
+      "f2 := phi",
+      "f3 := global.rho",
+      "f4 := pfChgIsoWrtChosenVtx03",
+      "f5 := pfChgIsoWrtWorstVtx03"
+     ]
+    },
+    "chIsoWorst_morphing": {
+     "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalRegressor_EB_chIsoWorst.xml",
+     "scale": 0.08225214049037333,
+     "center": 0.09122394838021142,
+     "variables": [
+      "f0 := pt",
+      "f1 := superCluster.eta",
+      "f2 := phi",
+      "f3 := global.rho",
+      "f4 := pfChgIsoWrtChosenVtx03",
+      "f5 := pfChgIsoWrtWorstVtx03"
+     ]
+    }
+   }
+  }
+ },
+ "preshower": {
+  "esEnergyOverSCRawEnergy":{
+   "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2018_Legacy/weights_finalRegressor_EE_esEnergyOverSCRawEnergy.xml", 
+   "scale": 0.012595965712158722, 
+   "center": 0.003168114837671168,
+   "variables": [
+    "f0 := pt",
+    "f1 := superCluster.eta",
+    "f2 := phi",
+    "f3 := global.rho",
+    "f4 := sieip",
+    "f5 := s4",
+    "f6 := full5x5_r9",
+    "f7 := superCluster.phiWidth",
+    "f8 := full5x5_sigmaIetaIeta",
+    "f9 := superCluster.etaWidth",
+    "f10 := userFloat(\"uncorr_esEnergyOverSCRawEnergy\")"
+   ]
+  }
+ }
+}
