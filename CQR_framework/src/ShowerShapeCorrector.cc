@@ -23,7 +23,7 @@ ShowerShapeCorrector::ShowerShapeCorrector(string campaign, bool isMC):
     ECALpart_     = {"EB", "EE"};
     is_es_        = false;
 
-    if isLoaded = false;
+    bool isLoaded = false;
     for (const auto& i_ss : ShowerShapes_) {
         for (const auto& i_ep : ECALpart_) {
             
