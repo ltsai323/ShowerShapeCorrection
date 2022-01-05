@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include <cstdlib>
+#include <exception>
 
 #include "boost/algorithm/string/split.hpp"
 #include "boost/algorithm/string/classification.hpp"
@@ -52,7 +53,7 @@ ShowerShapeCorrector::ShowerShapeCorrector(string campaign, bool isMC):
     {
         char mesg[200];
         sprintf( mesg, "input campaign '%s' is invalid. Please check\n", campaign.c_str() );
-        throw mesg;
+        throw std::invalid_argument(mesg);
     }
 
     ShowerShapes_.erase( ShowerShapes_.begin() + 6 );
