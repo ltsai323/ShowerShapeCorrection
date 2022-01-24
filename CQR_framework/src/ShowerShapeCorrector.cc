@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include <cstdlib>
+#include <exception>
 
 #include "boost/algorithm/string/split.hpp"
 #include "boost/algorithm/string/classification.hpp"
@@ -23,10 +24,12 @@ ShowerShapeCorrector::ShowerShapeCorrector(string campaign, bool isMC):
     ECALpart_     = {"EB", "EE"};
     is_es_        = false;
 
+    bool isLoaded = false;
     for (const auto& i_ss : ShowerShapes_) {
         for (const auto& i_ep : ECALpart_) {
             
             if ( !process.exists( i_ss + "_corrector_config_"+ i_ep + "_" + campaign ) ) continue;
+            isLoaded = true;
             if ( i_ss == "esEnergyOverSCRawEnergy" ) is_es_ = true;
             auto mva_config = process.getParameter<edm::ParameterSet>(i_ss + "_corrector_config_"+ i_ep + "_" + campaign);
 
@@ -42,11 +45,18 @@ ShowerShapeCorrector::ShowerShapeCorrector(string campaign, bool isMC):
             }
 
             readers_[i_ss + "_" + i_ep]->BookMVA(mva_config.getParameter<string>("classifier"), mva_config.getParameter<edm::FileInPath>("weights").fullPath());
+
         }
     }
 
-    ShowerShapes_.erase( ShowerShapes_.begin() + 6 );
+    if (!isLoaded )
+    {
+        char mesg[200];
+        sprintf( mesg, "input campaign '%s' is invalid. Please check\n", campaign.c_str() );
+        throw std::invalid_argument(mesg);
+    }
 
+    ShowerShapes_.erase( ShowerShapes_.begin() + 6 );
 }
 
 
