@@ -7,7 +7,7 @@
 #include "boost/algorithm/string/classification.hpp"
 
 #include "FWCore/ParameterSet/interface/ParameterSet.h"
-#include "FWCore/PythonParameterSet/interface/MakeParameterSets.h"
+#include "FWCore/ParameterSetReader/interface/ParameterSetReader.h"
 
 #include "ShowerShapeCorrection/CQR_framework/interface/ShowerShapeCorrector.h"
 

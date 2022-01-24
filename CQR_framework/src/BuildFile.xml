@@ -2,7 +2,7 @@
 <use name="roottmva"/>
 <use name="boost"/>
 <use name="FWCore/ParameterSet"/>
-<use name="FWCore/PythonParameterSet"/>
+<use name="FWCore/ParameterSetReader"/>
 <export>
       <lib name="1"/>
 </export>

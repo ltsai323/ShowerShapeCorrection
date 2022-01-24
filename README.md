@@ -4,9 +4,9 @@ This shower shape correction is based on flashgg framework https://github.com/cm
 
 ## Install
 ```
-cmsrel CMSSW_10_X_X
+cmsrel CMSSW_10_6_X
 
-cd CMSSW_10_X_X/src
+cd CMSSW_10_6_X/src
 
 git clone https://github.com/youyingli/ShowerShapeCorrection.git
 
