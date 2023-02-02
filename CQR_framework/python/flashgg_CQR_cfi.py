@@ -5,7 +5,7 @@ import os
 
 
 process = cms.PSet()
-campaign = ['2016', '2017', '2018', '2017_Legacy', '2018_Legacy']
+campaign = ['2016', '2017', '2018', '2017_Legacy', '2018_Legacy', '2016_Legacy_preVFP', '2016_Legacy_postVFP']
 
 features = {}
 
@@ -62,6 +62,32 @@ features['2017_Legacy'] = [
 ]
 
 features['2018_Legacy'] = [
+    "f0=pt",
+    "f1=etaSC",
+    "f2=phi",
+    "f3=rho",
+    "f4=sieip",
+    "f5=s4",
+    "f6=r9",
+    "f7=phiWidth",
+    "f8=sieie",
+    "f9=etaWidth"
+]
+
+features['2016_Legacy_preVFP'] = [
+    "f0=pt",
+    "f1=etaSC",
+    "f2=phi",
+    "f3=rho",
+    "f4=sieip",
+    "f5=s4",
+    "f6=r9",
+    "f7=phiWidth",
+    "f8=sieie",
+    "f9=etaWidth"
+]
+
+features['2016_Legacy_postVFP'] = [
     "f0=pt",
     "f1=etaSC",
     "f2=phi",

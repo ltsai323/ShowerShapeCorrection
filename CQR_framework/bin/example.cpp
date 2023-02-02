@@ -38,7 +38,7 @@ int main(){
     tree->SetBranchAddress("phiWidth"                ,&phiWidth                           );
     tree->SetBranchAddress("esEnergyOverSCRawEnergy" ,&esEnergyOverSCRawEnergy            );
 
-    //Campaign {2016, 2017, 2018, 2017_Legacy, 2018_Legacy}
+    //Campaign {2016, 2017, 2018, 2017_Legacy, 2018_Legacy, 2016_Legacy_preVFP, 2016_Legacy_postVFP}
     string camp = "2018_Legacy";
     bool isMC = true;
 

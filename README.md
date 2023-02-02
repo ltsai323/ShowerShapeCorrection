@@ -14,7 +14,7 @@ scram b -j 4
 ```
 
 ## Usage
-### Inport the shower shape corrector
+### Import the shower shape corrector
 Include the following header file in your C++ codes
 ```
 #include "ShowerShapeCorrection/CQR_framework/interface/ShowerShapeCorrector.h"
@@ -26,10 +26,10 @@ and add the following into your BuildFile.xml
 
 ### Example codes in C++
 
-The campaign can be 2016, 2017, 2018, 2017_Legacy, 2018_Legacy. And note that there is a flag to identify if the input is MC or data. (There is no correction for data.)
+The campaign can be 2016, 2017, 2018, 2017_Legacy, 2018_Legacy, 2016_Legacy_preVFP, 2016_Legacy_postVFP. And note that there is a flag to identify if the input is MC or data. (There is no correction for data.)
 
 ```cpp
-//Campaign {2016, 2017, 2018, 2017_Legacy, 2018_Legacy}
+//Campaign {2016, 2017, 2018, 2017_Legacy, 2018_Legacy, 2016_Legacy_preVFP, 2016_Legacy_postVFP}
 string camp = "2018_Legacy";
 bool isMC = true;
 

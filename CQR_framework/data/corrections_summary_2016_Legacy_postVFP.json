@@ -1,0 +1,270 @@
+{
+  "isolations": {
+    "phoIso": {
+      "EE": {
+        "peak_tail_clfs": {
+          "weights_data": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/data_clf_p2t_EE_phoIso.xml",
+          "weights_mc": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/mc_clf_p2t_EE_phoIso.xml",
+          "variables": [
+            "f0 := pt",
+            "f1 := superCluster.eta",
+            "f2 := phi",
+            "f3 := global.rho"
+          ]
+        },
+        "peak2tail": {
+          "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalTailRegressor_EE_phoIso.xml",
+          "variables": [
+            "f0 := pt",
+            "f1 := superCluster.eta",
+            "f2 := phi",
+            "f3 := global.rho",
+            "f4 := userFloat(\"peak2tail_rnd\")"
+          ]
+        },
+        "morphing": {
+          "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalRegressor_EE_phoIso.xml",
+          "scale": 0.04639385027815851,
+          "center": -0.009071758699859364,
+          "variables": [
+            "f0 := pt",
+            "f1 := superCluster.eta",
+            "f2 := phi",
+            "f3 := global.rho",
+            "f4 := pfPhoIso03"
+          ]
+        }
+      },
+      "EB": {
+        "peak_tail_clfs": {
+          "weights_data": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/data_clf_p2t_EB_phoIso.xml",
+          "weights_mc": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/mc_clf_p2t_EB_phoIso.xml",
+          "variables": [
+            "f0 := pt",
+            "f1 := superCluster.eta",
+            "f2 := phi",
+            "f3 := global.rho"
+          ]
+        },
+        "peak2tail": {
+          "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalTailRegressor_EB_phoIso.xml",
+          "variables": [
+            "f0 := pt",
+            "f1 := superCluster.eta",
+            "f2 := phi",
+            "f3 := global.rho",
+            "f4 := userFloat(\"peak2tail_rnd\")"
+          ]
+        },
+        "morphing": {
+          "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalRegressor_EB_phoIso.xml",
+          "scale": 0.05449315942114316,
+          "center": 0.023274442895029557,
+          "variables": [
+            "f0 := pt",
+            "f1 := superCluster.eta",
+            "f2 := phi",
+            "f3 := global.rho",
+            "f4 := pfPhoIso03"
+          ]
+        }
+      }
+    },
+    "chIso": {
+      "EE": {
+        "peak_tail_clfs": {
+          "weights_data": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/data_clf_3Cat_EE_chIso_chIsoWorst.xml",
+          "weights_mc": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/mc_clf_3Cat_EE_chIso_chIsoWorst.xml",
+          "variables": [
+            "f0 := pt",
+            "f1 := superCluster.eta",
+            "f2 := phi",
+            "f3 := global.rho"
+          ]
+        },
+        "chIso_peak2tail": {
+          "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalTailRegressor_EE_chIso.xml",
+          "variables": [
+            "f0 := pt",
+            "f1 := superCluster.eta",
+            "f2 := phi",
+            "f3 := global.rho",
+            "f4 := pfChgIsoWrtWorstVtx03",
+            "f5 := userFloat(\"peak2tail_chIso_rnd\")"
+          ]
+        },
+        "chIsoWorst_peak2tail": {
+          "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalTailRegressor_EE_chIsoWorst.xml",
+          "variables": [
+            "f0 := pt",
+            "f1 := superCluster.eta",
+            "f2 := phi",
+            "f3 := global.rho",
+            "f4 := pfChgIsoWrtChosenVtx03",
+            "f5 := userFloat(\"peak2tail_chIsoWorst_rnd\")"
+          ]
+        },
+        "chIso_morphing": {
+          "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalRegressor_EE_chIso.xml",
+          "scale": 0.07740907671798913,
+          "center": 0.007258832964647133,
+          "variables": [
+            "f0 := pt",
+            "f1 := superCluster.eta",
+            "f2 := phi",
+            "f3 := global.rho",
+            "f4 := pfChgIsoWrtChosenVtx03",
+            "f5 := pfChgIsoWrtWorstVtx03"
+          ]
+        },
+        "chIsoWorst_morphing": {
+          "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalRegressor_EE_chIsoWorst.xml",
+          "scale": 0.06644853689237862,
+          "center": -0.011044785368476306,
+          "variables": [
+            "f0 := pt",
+            "f1 := superCluster.eta",
+            "f2 := phi",
+            "f3 := global.rho",
+            "f4 := pfChgIsoWrtChosenVtx03",
+            "f5 := pfChgIsoWrtWorstVtx03"
+          ]
+        }
+      },
+      "EB": {
+        "peak_tail_clfs": {
+          "weights_data": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/data_clf_3Cat_EB_chIso_chIsoWorst.xml",
+          "weights_mc": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/mc_clf_3Cat_EB_chIso_chIsoWorst.xml",
+          "variables": [
+            "f0 := pt",
+            "f1 := superCluster.eta",
+            "f2 := phi",
+            "f3 := global.rho"
+          ]
+        },
+        "chIso_peak2tail": {
+          "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalTailRegressor_EB_chIso.xml",
+          "variables": [
+            "f0 := pt",
+            "f1 := superCluster.eta",
+            "f2 := phi",
+            "f3 := global.rho",
+            "f4 := pfChgIsoWrtWorstVtx03",
+            "f5 := userFloat(\"peak2tail_chIso_rnd\")"
+          ]
+        },
+        "chIsoWorst_peak2tail": {
+          "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalTailRegressor_EB_chIsoWorst.xml",
+          "variables": [
+            "f0 := pt",
+            "f1 := superCluster.eta",
+            "f2 := phi",
+            "f3 := global.rho",
+            "f4 := pfChgIsoWrtChosenVtx03",
+            "f5 := userFloat(\"peak2tail_chIsoWorst_rnd\")"
+          ]
+        },
+        "chIso_morphing": {
+          "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalRegressor_EB_chIso.xml",
+          "scale": 0.061868861376715434,
+          "center": 0.026987387724344503,
+          "variables": [
+            "f0 := pt",
+            "f1 := superCluster.eta",
+            "f2 := phi",
+            "f3 := global.rho",
+            "f4 := pfChgIsoWrtChosenVtx03",
+            "f5 := pfChgIsoWrtWorstVtx03"
+          ]
+        },
+        "chIsoWorst_morphing": {
+          "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalRegressor_EB_chIsoWorst.xml",
+          "scale": 0.0669191515057892,
+          "center": 0.05043408532041449,
+          "variables": [
+            "f0 := pt",
+            "f1 := superCluster.eta",
+            "f2 := phi",
+            "f3 := global.rho",
+            "f4 := pfChgIsoWrtChosenVtx03",
+            "f5 := pfChgIsoWrtWorstVtx03"
+          ]
+        }
+      }
+    }
+  },
+  "shower_shapes": {
+    "r9": {
+      "EB": {
+        "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalRegressor_EB_r9.xml",
+        "scale": 0.005245345997489048,
+        "center": 0.0004184281464778561
+      },
+      "EE": {
+        "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalRegressor_EE_r9.xml",
+        "scale": 0.0077575458552175125,
+        "center": -0.0012002614286774627
+      }
+    },
+    "s4": {
+      "EB": {
+        "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalRegressor_EB_s4.xml",
+        "scale": 0.005418334473795694,
+        "center": 0.0005359718311174211
+      },
+      "EE": {
+        "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalRegressor_EE_s4.xml",
+        "scale": 0.009893937358270821,
+        "center": -0.003225590896142938
+      }
+    },
+    "sieie": {
+      "EB": {
+        "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalRegressor_EB_sieie.xml",
+        "scale": 8.260549349573335e-05,
+        "center": -1.916783904906856e-05
+      },
+      "EE": {
+        "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalRegressor_EE_sieie.xml",
+        "scale": 0.00035672568235120376,
+        "center": 0.0002632409272769094
+      }
+    },
+    "phiWidth": {
+      "EB": {
+        "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalRegressor_EB_phiWidth.xml",
+        "scale": 0.0009298701622562702,
+        "center": 2.9448553507782638e-05
+      },
+      "EE": {
+        "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalRegressor_EE_phiWidth.xml",
+        "scale": 0.0018718152900249491,
+        "center": -0.000305563278066372
+      }
+    },
+    "etaWidth": {
+      "EB": {
+        "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalRegressor_EB_etaWidth.xml",
+        "scale": 0.00027342204124454657,
+        "center": -2.321916146273348e-05
+      },
+      "EE": {
+        "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalRegressor_EE_etaWidth.xml",
+        "scale": 0.0004437511456392611,
+        "center": 0.00018104783893706147
+      }
+    },
+    "sieip": {
+      "EB": {
+        "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalRegressor_EB_sieip.xml",
+        "scale": 1.0149172395115035e-06,
+        "center": -2.5343023380897476e-08
+      },
+      "EE": {
+        "weights": "ShowerShapeCorrection/CQR_framework/data/PhoIdInputsCorrections/2016_Legacy_postVFP/weights_finalRegressor_EE_sieip.xml",
+        "scale": 2.1131218418663593e-05,
+        "center": -7.472572038608104e-06
+      }
+    }
+  }
+}
